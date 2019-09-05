@@ -10,9 +10,9 @@ server.listen(PORT, () => {
 });
 
 // app.use("/public", express.static("./public"));
-app.get("/", (req, res) => {
-  안녕;
-});
+// app.get("/", (req, res) => {
+//   res.redirect(302, "/public");
+// });
 
 const socketio = require("socket.io");
 const io = socketio.listen(server);
